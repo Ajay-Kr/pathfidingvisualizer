@@ -1,0 +1,108 @@
+.node {
+	width: 25px;
+	height: 25px;
+	outline: 1px solid rgba(109, 109, 109, 0.3);
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.node:hover {
+	transform: scale(1.05);
+	background-color: #96cdd6b0;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6), -2px -2px 6px rgba(0, 0, 0, 0.6);
+	transition: all 0.1s ease-in-out;
+}
+
+.node-finish {
+	border: 5px solid #96cdd6b0;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: rgb(235, 0, 0);
+}
+
+.node-finish:hover {
+	background-color: rgb(226, 0, 0);
+	transition: all 0.1s ease-in-out;
+}
+
+.node-start {
+	padding: 3px;
+	background-color: green;
+	border: 7px solid #96cdd6b0;
+	border-radius: 50%;
+}
+
+.node-start:hover {
+	background-color: rgb(0, 100, 0);
+	transition: all 0.1s ease-in-out;
+}
+
+.node-visited {
+	animation-name: visitedAnimation;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+}
+
+@keyframes visitedAnimation {
+	0% {
+		transform: scale(0.3);
+		background-color: rgba(0, 0, 66, 0.75);
+		border-radius: 100%;
+	}
+
+	50% {
+		background-color: rgba(217, 17, 187, 0.75);
+	}
+
+	75% {
+		transform: scale(1.2);
+		background-color: rgba(34, 17, 217, 0.75);
+	}
+
+	100% {
+		transform: scale(1);
+		background-color: rgba(0, 163, 52, 0.863);
+	}
+}
+
+.node-wall {
+	background-color: rgb(12, 53, 71);
+}
+
+.node-wall:hover {
+	background-color: rgb(8, 37, 49);
+	transition: all 0.1s ease-in-out;
+}
+
+.node-shortest-path {
+	animation-name: shortestPath;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+}
+
+@keyframes shortestPath {
+	0% {
+		transform: scale(0.6);
+		background-color: rgb(255, 233, 106);
+	}
+
+	50% {
+		transform: scale(1.2);
+		background-color: rgb(255, 254, 106);
+	}
+
+	100% {
+		transform: scale(1);
+		background-color: rgba(248, 172, 32, 0.932);
+	}
+}

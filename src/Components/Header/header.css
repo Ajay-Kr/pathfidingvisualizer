@@ -1,0 +1,80 @@
+.h {
+	color: white;
+	margin: auto;
+	z-index: 3;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.592) 1%, #362d2f);
+	backdrop-filter: blur(10px);
+	box-shadow: 2px 2px 15px #322e2f;
+	position: absolute;
+	width: 100%;
+	animation: animate-h 3s 5s 1 forwards ease-in-out;
+}
+
+@keyframes animate-h {
+	from {
+		/* position: absolute; */
+		height: 100%;
+	}
+	to {
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.555) 1%, #322e2f);
+		/* position: relative; */
+		height: 11%;
+		/* top: 0; */
+		/* left: 50%;
+	transform: translate(-50%, -50%); */
+	}
+}
+
+.h-navbar {
+	/* background-color: #322e2f; */
+	/* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.555) 1%, #322e2f);
+	box-shadow: 2px 2px 15px #322e2f; */
+	padding: 0;
+}
+
+h1 {
+	font-weight: 500;
+	margin: 0;
+	line-height: 48px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* animation: animate-header 2s 5s forwards; */
+}
+
+.h1-stretch {
+	display: inline-block;
+	color: rgb(255, 217, 0);
+	transform: scaleY(1.15);
+	font-weight: 700;
+	margin: 8px 5px;
+}
+
+.h1-span {
+	font-family: "Lovelo", sans-serif;
+	font-weight: 700;
+	color: rgb(255, 217, 0);
+}
+
+.h1-img {
+	display: block;
+	height: 300px;
+	width: 300px;
+	margin: 5px auto;
+	border-radius: 20px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.555),
+		-5px -5px 15px rgba(0, 0, 0, 0.555);
+	animation: animate-h1-img 3s 5s 1 forwards ease-in-out;
+}
+
+@keyframes animate-h1-img {
+	from {
+		display: inline-block;
+	}
+	to {
+		margin-top: -65%;
+		display: none;
+	}
+}

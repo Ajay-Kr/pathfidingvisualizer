@@ -1,0 +1,8 @@
+.btn-stack {
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: #000;
+	border-radius: 2px;
+	margin: 4px auto;
+}

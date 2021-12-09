@@ -1,0 +1,49 @@
+.pfv {
+	background-color: #76bcd89a;
+	height: 100vh;
+}
+
+.pfv-container {
+	display: inline-block;
+	padding: 15px;
+	border-top: 2px solid rgba(255, 255, 255, 0.5);
+	/* box-shadow: inset 2px 2px 5px #6bc7e9c9, 2px 2px 5px #22647ec9,
+		-2px -2px 5px #d4f3ffc9; */
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5), inset 5px 5px 55px #0e80949a;
+	/* background-color: white; */
+	background-color: rgba(255, 255, 255, 0.075);
+	backdrop-filter: blur(3px);
+	border-radius: 25px;
+	margin: auto;
+}
+
+.pfv-btns {
+	padding-top: 5%;
+}
+
+.grid-container {
+	/* margin: 10px auto; */
+}
+
+.grid {
+	white-space: pre;
+}
+
+.btn {
+	margin: 20px 30px;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+	min-width: 150px;
+	border-radius: 8px;
+	transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+	transform: scale(1.05);
+	transition: all 0.5s ease-in-out;
+}
+
+.info-btn {
+	min-width: 50px;
+	min-height: 50px;
+}
