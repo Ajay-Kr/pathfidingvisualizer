@@ -1,5 +1,5 @@
-# [Pathfindingvisualizer] (Visit here)
+# Pathfindingvisualizer
 Basic implementation of path finding algorithms using React
 
-[Visit here]: (https://ajay-kr.github.io/pathfindingvisualizer/)
+[Visit here] (https://ajay-kr.github.io/pathfindingvisualizer/)
 
